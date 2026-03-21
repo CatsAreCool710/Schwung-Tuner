@@ -18,7 +18,7 @@
  *
  * All messages are prefixed with [tuner] and routed through the ME host
  * logging system (g_host->log). View with:
- *   ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.log"
+ *   ssh ableton@move.local "tail -f /data/UserData/schwung/debug.log"
  */
 
 #ifndef TUNER_DEBUG_H
