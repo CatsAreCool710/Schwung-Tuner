@@ -1,14 +1,14 @@
-# Move Everything Tuner
+# Schwung Tuner
 
-Instrument tuner module for the [Move Everything](https://github.com/charlesvestal/move-everything) framework on Ableton Move hardware. Accessibility-first design with screen reader integration and auditory feedback.
+Instrument tuner module for the [Schwung](https://github.com/charlesvestal/move-everything) framework on Ableton Move hardware. Accessibility-first design with screen reader integration and auditory feedback.
 
 ## Downloads
 
-Available in the Move Everything module store, via the [Move Everything Installer](https://github.com/charlesvestal/move-everything-installer), or as manual downloads from the [Releases page](https://github.com/CatsAreCool710/Move-Everything-Tuner/releases).
+Available in the Schwung module store, via the [Schwung Installer](https://github.com/charlesvestal/move-everything-installer), or as manual downloads from the [Releases page](https://github.com/CatsAreCool710/Move-Everything-Tuner/releases).
 
 ## Introduction
 
-Move Everything Tuner brings a full-featured instrument tuner to Ableton Move. It detects pitch from the Move's built-in microphone or line input using the YIN algorithm and provides three auditory feedback modes so you can tune without looking at a screen. The module was designed from the ground up for blind and visually impaired musicians, with complete screen reader integration via the Move Everything shared accessibility system.
+Schwung Tuner brings a full-featured instrument tuner to Ableton Move. It detects pitch from the Move's built-in microphone or line input using the YIN algorithm and provides three auditory feedback modes so you can tune without looking at a screen. The module was designed from the ground up for blind and visually impaired musicians, with complete screen reader integration via the Schwung shared accessibility system.
 
 ## Features
 
@@ -26,7 +26,7 @@ Move Everything Tuner brings a full-featured instrument tuner to Ableton Move. I
 ## Requirements
 
 - Ableton Move hardware
-- [Move Everything](https://github.com/charlesvestal/move-everything) framework installed on the Move
+- [Schwung](https://github.com/charlesvestal/move-everything) framework installed on the Move
 - SSH access to Move (for deployment)
 - Docker (for building the DSP plugin)
 
@@ -123,7 +123,7 @@ This project was developed with AI assistance (Claude by Anthropic) under human 
 
 ## Disclaimer
 
-This project is not affiliated with or endorsed by Ableton AG or the Move Everything project. Ableton, Ableton Live, and Move are trademarks of Ableton AG.
+This project is not affiliated with or endorsed by Ableton AG or the Schwung project. Ableton, Ableton Live, and Move are trademarks of Ableton AG.
 
 ## License
 

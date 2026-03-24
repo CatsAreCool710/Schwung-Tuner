@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Instructions for AI coding agents working on Move Everything Tuner.
+Instructions for AI coding agents working on Schwung Tuner.
 
 ## Quick Reference
 
@@ -15,7 +15,7 @@ MSYS_NO_PATHCONV=1 docker run --rm -v "$(pwd):/build" -w /build tuner-builder ./
 ./scripts/install.sh
 
 # Debug log
-ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.log"
+ssh ableton@move.local "tail -f /data/UserData/schwung/debug.log"
 
 # Update version
 ./scripts/version.sh X.X.X
@@ -27,7 +27,7 @@ ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.log"
 - **Reserved key**: `mode` is intercepted by the ME host framework and never reaches the plugin's `set_param`. Use `tn_inst` (integer preset index) for preset switching.
 - `component_type: "tool"` must be a **top-level field** in `module.json`, NOT inside `capabilities`.
 - `plugin_api_v2_t` MUST include `get_error` field (8 fields total).
-- Import paths MUST use **absolute paths** (`/data/UserData/move-anything/shared/...`), not relative.
+- Import paths MUST use **absolute paths** (`/data/UserData/schwung/shared/...`), not relative.
 - Do NOT use `chain_params` in `module.json` -- no other ME tool module uses them and they cause parameter interception.
 - Audio format: int16 stereo interleaved, 44100 Hz, 128 frames/block.
 - Use `cat` instead of `cp` in build scripts (Docker volume compatibility).

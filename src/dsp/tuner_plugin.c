@@ -1,5 +1,5 @@
 /*
- * tuner_plugin.c - Move Everything Tuner plugin entry point
+ * tuner_plugin.c - Schwung Tuner plugin entry point
  *
  * Copyright (C) 2026 Jeremiah Ticket
  *

@@ -1,4 +1,4 @@
-# Move Everything Tuner
+# Schwung Tuner
 
 Chromatic and instrument tuner for Ableton Move hardware. GPLv3, Copyright 2026 Jeremiah Ticket.
 
@@ -16,7 +16,7 @@ Chromatic and instrument tuner for Ableton Move hardware. GPLv3, Copyright 2026 
 - **No `chain_params`**: No other ME tool module uses them. They cause the framework to intercept params. Removed entirely.
 - **`component_type: "tool"`**: Must be a top-level field in `module.json`, NOT inside `capabilities`.
 - **`plugin_api_v2_t`**: Must have exactly 8 fields including `get_error`.
-- **Import paths**: Must use absolute paths (`/data/UserData/move-anything/shared/...`), never relative.
+- **Import paths**: Must use absolute paths (`/data/UserData/schwung/shared/...`), never relative.
 - **Knob touches**: Arrive as MIDI Note On (note 0-7, velocity > 0). Filtered by `shouldFilterMessage()` by default — must handle BEFORE the filter call.
 - **State persistence**: `get_param("state")` returns JSON blob of all settings, `set_param("state", json)` restores them.
 - **GPLv3 license headers** required on all source files. Copyright holder: Jeremiah Ticket.
@@ -51,7 +51,7 @@ On Windows/Git Bash with path issues:
 MSYS_NO_PATHCONV=1 docker run --rm -v "$(pwd):/build" -w /build tuner-builder ./scripts/build.sh
 ```
 
-Debug log: `ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.log"`
+Debug log: `ssh ableton@move.local "tail -f /data/UserData/schwung/debug.log"`
 
 ## Code Style
 
@@ -115,5 +115,5 @@ Debug log: `ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.l
 
 Manual testing on hardware only. Deploy with `./scripts/install.sh`, then:
 ```bash
-ssh ableton@move.local "tail -f /data/UserData/move-anything/debug.log"
+ssh ableton@move.local "tail -f /data/UserData/schwung/debug.log"
 ```

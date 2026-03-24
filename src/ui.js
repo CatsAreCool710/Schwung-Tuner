@@ -1,5 +1,5 @@
 /*
- * ui.js - Move Everything Tuner UI
+ * ui.js - Schwung Tuner UI
  *
  * Copyright (C) 2026 Jeremiah Ticket
  *
@@ -23,13 +23,13 @@
  */
 
 /* -------------------------------------------------------------------------- */
-/* Imports from Move Everything shared utilities (absolute paths)              */
+/* Imports from Schwung shared utilities (absolute paths)              */
 /* -------------------------------------------------------------------------- */
 
 import { announce, announceParameter, announceView }
-    from '/data/UserData/move-anything/shared/screen_reader.mjs';
+    from '/data/UserData/schwung/shared/screen_reader.mjs';
 import { shouldFilterMessage, decodeDelta, setLED, setButtonLED }
-    from '/data/UserData/move-anything/shared/input_filter.mjs';
+    from '/data/UserData/schwung/shared/input_filter.mjs';
 import {
     MidiCC, MidiNoteOn,
     MoveKnob1, MoveKnob5, MoveKnob8,
@@ -38,15 +38,15 @@ import {
     BrightGreen, VividYellow, BrightRed, Black, White, DullGreen,
     DarkGrassGreen, Bright, Cyan, MoveStep1, MoveStep16, MoveSteps,
     PaleCyan
-} from '/data/UserData/move-anything/shared/constants.mjs';
+} from '/data/UserData/schwung/shared/constants.mjs';
 import { createValue, createToggle, createEnum, formatItemValue }
-    from '/data/UserData/move-anything/shared/menu_items.mjs';
+    from '/data/UserData/schwung/shared/menu_items.mjs';
 import { createMenuState, handleMenuInput }
-    from '/data/UserData/move-anything/shared/menu_nav.mjs';
+    from '/data/UserData/schwung/shared/menu_nav.mjs';
 import { createMenuStack }
-    from '/data/UserData/move-anything/shared/menu_stack.mjs';
+    from '/data/UserData/schwung/shared/menu_stack.mjs';
 import { drawHierarchicalMenu }
-    from '/data/UserData/move-anything/shared/menu_render.mjs';
+    from '/data/UserData/schwung/shared/menu_render.mjs';
 
 /* -------------------------------------------------------------------------- */
 /* Constants                                                                   */

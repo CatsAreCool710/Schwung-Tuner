@@ -8,7 +8,7 @@ MODULE_ID="tuner"
 DIST_DIR="$ROOT_DIR/dist/$MODULE_ID"
 REMOTE_HOST="${MOVE_HOST:-move.local}"
 REMOTE_USER="${MOVE_USER:-root}"
-REMOTE_PATH="/data/UserData/move-anything/modules/tools/$MODULE_ID"
+REMOTE_PATH="/data/UserData/schwung/modules/tools/$MODULE_ID"
 
 if [ ! -d "$DIST_DIR" ]; then
     echo "ERROR: dist/$MODULE_ID/ not found. Run ./scripts/build.sh first."
